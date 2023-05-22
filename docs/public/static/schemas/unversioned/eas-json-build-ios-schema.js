@@ -35,11 +35,17 @@ export default [
     name: 'resourceClass',
     enum: ['default', 'medium', 'large', 'm-medium', 'intel-medium'],
     description: [
-      'The iOS-specific resource class that will be used to run this build. [Learn more](../../build-reference/infrastructure#ios-build-server-configurations)',
+      'The iOS-specific resource class that will be used to run this build.',
       '- For SDK version >= 45 or React Native version >= 0.71.0 `default` maps to `m-medium`, otherwise it maps to `intel-medium`',
       '- For SDK version >= 45 or React Native version >= 0.71.0 `medium` maps to `m-medium`, otherwise it maps to `intel-medium`',
       '',
+      'Build resources:',
+      '- `intel-medium` 3 cores, 12 GB RAM, 2 builder VMs per host',
+      '- `m-medium` 2 cores, 8 GB RAM, 2 builder VMs per host',
+      '- `large` 4 cores, 12 GB RAM, 2 builder VMs per host (for builds running on M2 Pro hosts) or 4 cores, 22 GB RAM, 1 builder VM per host (for builds running on M2 hosts)',
+      '',
       'This can change over time. To ensure you stay on the same configuration even when we change our defaults, use the specific resource class name.',
+      '',
     ],
   },
   {
