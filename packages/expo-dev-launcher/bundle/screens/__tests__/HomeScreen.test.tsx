@@ -195,10 +195,15 @@ describe('<HomeScreen />', () => {
         username: 'hi',
         id: '1234',
         appCount: 1,
-        email: '123@321.ca',
         profilePhoto: '123',
         isExpoAdmin: true,
-        accounts: [{ id: '1', name: 'Joe', owner: { username: '123', fullName: 'Joe' } }],
+        accounts: [
+          {
+            id: '1',
+            name: 'Joe',
+            ownerUserActor: { username: '123', fullName: 'Joe', profilePhoto: '' },
+          },
+        ],
       },
     });
 
