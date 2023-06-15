@@ -1,5 +1,5 @@
 {
-  "name": "expo-face-detector",
+  "name": "expo-face-detector-v2",
   "version": "12.1.2",
   "description": "Lets you use the power of Google Mobile Vision (https://developers.google.com/vision/face-detection-concepts) framework to detect faces on images.",
   "main": "build/FaceDetector.js",
@@ -23,7 +23,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/expo/expo.git",
+    "url": "https://github.com/singhayush1403/expo.git",
     "directory": "packages/expo-face-detector"
   },
   "bugs": {
